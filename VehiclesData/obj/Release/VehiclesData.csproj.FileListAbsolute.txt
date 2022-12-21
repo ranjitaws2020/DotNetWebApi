@@ -1,0 +1,8 @@
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\bin\Release\VehiclesData.dll
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\bin\Release\VehiclesData.pdb
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\bin\Release\System.Data.SqlClient.dll
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\obj\Release\VehiclesData.csproj.AssemblyReference.cache
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\obj\Release\VehiclesData.csproj.CoreCompileInputs.cache
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\obj\Release\VehiclesData.csproj.CopyComplete
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\obj\Release\VehiclesData.dll
+C:\Users\myadmin\source\repos\VehiclesAPI\VehiclesData\obj\Release\VehiclesData.pdb

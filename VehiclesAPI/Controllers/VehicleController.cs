@@ -36,10 +36,17 @@ namespace VehiclesAPI.Controllers
         {
             return veh.CreateVehicle(newveh.Year,newveh.Make,newveh.Model);
         }
+        /// <summary>
+        /// This method will remove the vehicle
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public String RemoveVehicles(int id)
         {
+
             return veh.RemoveVehicles(id);
+            
         }
     }
 }

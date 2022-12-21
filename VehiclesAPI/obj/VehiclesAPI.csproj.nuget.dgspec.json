@@ -14,7 +14,7 @@
         "outputPath": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\myadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -83,11 +83,22 @@
         "projectUniqueName": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesData\\VehiclesData.csproj",
         "projectName": "VehiclesData",
         "projectPath": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesData\\VehiclesData.csproj",
+        "packagesPath": "C:\\Users\\myadmin\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "C:\\Users\\myadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net472": {
             "projectReferences": {}
           }
-        }
+        },
+        "packagesConfigPath": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesData\\packages.config"
       },
       "frameworks": {
         "net472": {}
