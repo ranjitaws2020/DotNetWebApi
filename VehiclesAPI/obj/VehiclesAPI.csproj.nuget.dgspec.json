@@ -83,22 +83,11 @@
         "projectUniqueName": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesData\\VehiclesData.csproj",
         "projectName": "VehiclesData",
         "projectPath": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesData\\VehiclesData.csproj",
-        "packagesPath": "C:\\Users\\myadmin\\.nuget\\packages\\",
-        "projectStyle": "PackagesConfig",
-        "configFilePaths": [
-          "C:\\Users\\myadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net472": {
             "projectReferences": {}
           }
-        },
-        "packagesConfigPath": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesData\\packages.config"
+        }
       },
       "frameworks": {
         "net472": {}
