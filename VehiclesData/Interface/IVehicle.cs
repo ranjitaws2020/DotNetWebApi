@@ -9,10 +9,10 @@ namespace VehiclesData.Interface
 {
     public interface IVehicle
     {
-        List<Vehicle> GetVehicles();
-        List<Vehicle> GetVehicleById(int id);
-        string UpdateVehicles(int id, int Year,string Make,string Model);
-        string CreateVehicle(int Year,string Make,string Model);
-        string RemoveVehicles(int id);
+        List<Vehicle> GetVehicles(string conStr);
+        List<Vehicle> GetVehicleById(int id,string conStr);
+        string UpdateVehicles(int id, int Year,string Make,string Model,string conStr);
+        string CreateVehicle(int Year,string Make,string Model,string conStr);
+        string RemoveVehicles(int id, string conStr);
     }
 }

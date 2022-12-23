@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -10,17 +11,18 @@ using VehiclesData.Model;
 
 namespace VehiclesData.Repository
 {
+
     public class VehicleRepository:IVehicle
     {
-        string ConnectionString = @"data source=VM1122;initial catalog=master;user id=sa;password=myadmin";
+        // string ConnectionString = @"data source=VM1122;initial catalog=master;user id=sa;password=myadmin";   
 
-        public string CreateVehicle(int Year, string Make, string Model)
+        public string CreateVehicle(int Year, string Make, string Model,string conStr)
         {
             DataTable NewVehicle = new DataTable();
             string message;
             try
             {
-                using (SqlConnection con = new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(conStr))
                 {
 
                     SqlCommand cmd = new SqlCommand();
@@ -46,13 +48,13 @@ namespace VehiclesData.Repository
             return message;
         }
 
-        public List<Vehicle> GetVehicleById(int id)
+        public List<Vehicle> GetVehicleById(int id,string conStr)
         {
             DataTable VehicleSet = new DataTable();
             List<Vehicle> vehicleList = new List<Vehicle>();
             try
             {
-                using (SqlConnection con = new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(conStr))
                 {
 
                     SqlCommand cmd = new SqlCommand();
@@ -86,16 +88,13 @@ namespace VehiclesData.Repository
             return vehicleList;
         }
 
-        public List<Vehicle> GetVehicles()
+        public List<Vehicle> GetVehicles(string conStr)
         {
-
             DataTable VehicleSet = new DataTable();
             List<Vehicle> vehicleList = new List<Vehicle>();
             try
             {
-                // string ConnectionString = @"data source=VM1122;initial catalog=master;trusted_connection=true";
-
-                using (SqlConnection con = new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(conStr))
                 {
 
                     SqlCommand cmd = new SqlCommand();
@@ -129,14 +128,14 @@ namespace VehiclesData.Repository
             return vehicleList;
         }
 
-        public string RemoveVehicles(int id)
-        {
+        public string RemoveVehicles(int id, string conStr)
+        {           
             DataTable DeleteVehicle = new DataTable();
             string message;
 
             try
             {
-                using (SqlConnection con = new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(conStr))
                 {
 
                     SqlCommand cmd = new SqlCommand();
@@ -160,13 +159,14 @@ namespace VehiclesData.Repository
             return message;
         }
 
-        public string UpdateVehicles(int id, int Year, string Make, string Model)
+        public string UpdateVehicles(int id, int Year, string Make, string Model, string conStr)
         {
+            
             DataTable UpdateVehicle = new DataTable();
             string message;
             try
             {
-                using (SqlConnection con = new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(conStr))
                 {
 
                     SqlCommand cmd = new SqlCommand();

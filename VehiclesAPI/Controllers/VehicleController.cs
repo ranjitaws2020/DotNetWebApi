@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using VehiclesData.Model;
 using VehiclesData.Interface;
 using VehiclesData.Repository;
+using System.Configuration;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace VehiclesAPI.Controllers
 {
@@ -16,25 +19,34 @@ namespace VehiclesAPI.Controllers
     {
         private IVehicle veh = new VehicleRepository();
 
+        db obj = new db();
+
         [HttpGet]
         public ActionResult<IEnumerable<Vehicle>> GetVehicles()
         {
-            return veh.GetVehicles();
+            string conStr = obj.dbConString();
+            return veh.GetVehicles(conStr);
         }
+
         [HttpGet("{id}")]
         public ActionResult<IEnumerable<Vehicle>> GetVehicleById(int id)
         {
-            return veh.GetVehicleById(id);
+            string conStr = obj.dbConString();
+            return veh.GetVehicleById(id,conStr);
         }
+
         [HttpPut("/updatevehicles")]
         public String UpdateVehicles(int id,int Year,string Make,string Model)
         {
-            return veh.UpdateVehicles(id, Year, Make, Model);
+            string conStr = obj.dbConString();
+            return veh.UpdateVehicles(id, Year, Make, Model,conStr);
         }
+
         [HttpPost("/AddVehicles")]
         public String CreateVehicle([FromBody] Vehicle newveh)
         {
-            return veh.CreateVehicle(newveh.Year,newveh.Make,newveh.Model);
+            string conStr = obj.dbConString();
+            return veh.CreateVehicle(newveh.Year,newveh.Make,newveh.Model,conStr);
         }
         /// <summary>
         /// This method will remove the vehicle
@@ -44,8 +56,8 @@ namespace VehiclesAPI.Controllers
         [HttpDelete("{id}")]
         public String RemoveVehicles(int id)
         {
-
-            return veh.RemoveVehicles(id);
+            string conStr = obj.dbConString();
+            return veh.RemoveVehicles(id,conStr);
             
         }
     }

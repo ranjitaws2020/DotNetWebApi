@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qLbRZ1p8hCL9D8E9PsDi21trevsPybKDo1Zmp01ZM17uU5BIjWCSmZbfWkiGl1dVLFuuFuCbzXMGcxO2qXyqtg==",
+  "dgSpecHash": "kjK1wsur+OqVBIoAHjGtrHfxGMYPdh6Dasl9lsJMJdLqMuAidUGrCKD7E+XWZji8BzcRL5hqogOQaaxeZZqCcA==",
   "success": true,
   "projectFilePath": "C:\\Users\\myadmin\\source\\repos\\VehiclesAPI\\VehiclesAPI\\VehiclesAPI.csproj",
   "expectedPackageFiles": [
@@ -16,9 +16,12 @@
     "C:\\Users\\myadmin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\myadmin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
     "C:\\Users\\myadmin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\myadmin\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
     "C:\\Users\\myadmin\\.nuget\\packages\\system.data.sqlclient\\4.4.0\\system.data.sqlclient.4.4.0.nupkg.sha512",
-    "C:\\Users\\myadmin\\.nuget\\packages\\system.security.accesscontrol\\4.4.0\\system.security.accesscontrol.4.4.0.nupkg.sha512",
-    "C:\\Users\\myadmin\\.nuget\\packages\\system.security.principal.windows\\4.4.0\\system.security.principal.windows.4.4.0.nupkg.sha512",
+    "C:\\Users\\myadmin\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\myadmin\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\myadmin\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\myadmin\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\myadmin\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
   ],
   "logs": []
